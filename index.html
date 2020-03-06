@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>MTM1526 - Form Validation</title>
+	<link rel="stylesheet" href="./css/main.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="wrapper">
+	<form method="get" action="index.php" id="myForm" onsubmit="return formValidator()">
+	        <fieldset>
+	            <legend>Cultest Dossier</legend>
+	        
+	        <div class="grid-container">    
+              
+              <!--Cultest Name Input-->
+                  <div class="box cultestName">
+  	                <label for="cultestName">Full Name:</label><br>
+  	                <input type="text" id="cultestName" name="fullName" placeholder="Richard Pickman">
+  	             </div>
+	            
+            
+    	            <!--Email Input-->
+    	            <div class="box email">
+    	               <label for="email">Email:</label><br>
+    	               <input type="text" id="email" name="email" placeholder="pickman@miskatonicu.com">  
+    	            </div>
+              </div> 
+
+	            <!--Text Input-->
+	            <div class="box">
+	            	<label for="message">Message:</label><br>
+	                <textarea type="text" id="message" name="message" placeholder="Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn!"></textarea>
+	            </div>
+	                
+	            <div id="box">
+	                <input type="button" 
+	                       value="SUBMIT TO THE OLD ONES" 
+	                       id="validate-form" >
+	            </div>
+
+	        </fieldset>
+	    </form>
+
+	    <div class="correspondance">
+	    	<p class="output"></p>
+	    </div>
+</div>
+
+
+	    <script src="./js/main.js"></script>
+</body>
+
+</html>

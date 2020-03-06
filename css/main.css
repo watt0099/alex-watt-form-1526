@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Inconsolata&display=swap');
+
+/*-----General Styles -----*/
+body{
+	font-size: 1.5rem;
+	background-image: url("../images/deskBackground.jpg");
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	margin: 0;
+	padding: 0;
+	font-family: 'Inconsolata';
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#wrapper{
+	margin: 0 auto;
+	max-width: 90%;
+	width: 50rem;
+
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*----- Form Styles -----*/
+
+#myForm{
+	margin: 7rem 0 ;
+}
+
+fieldset{
+	background-color: rgb(235, 214, 169);
+	border-radius: 2px;
+	border: none;
+	box-shadow: -1px -3px 0px rgba(0,0,0,.3), -1px -4px 6px rgba(0,0,0,.3);
+	margin: 0 auto;
+	transition: .2s;
+}
+
+legend{
+	background-color: rgb(235, 214, 169);
+	padding: .8rem 1.5rem .8rem .8rem;
+	box-shadow: 0px -3px 4px rgba(0,0,0,.3);
+	border-radius: 5px;
+	text-align: right;
+}
+
+label{
+	margin: 1em;
+}
+
+input[type="text"] {
+	padding: .6em;
+	width: 80%;
+	margin: .5em;
+	display: inline-block;
+	font-family: 'Caveat' ;
+	font-size: 1.5rem;
+	background: rgba(0,0,0,0);
+	border: none;
+	border-bottom: 2px dotted #000;
+}
+
+.fullName{
+	margin: 0 auto;
+}
+
+.email{
+	margin: 0 auto;
+}
+
+textarea{
+	padding: .6em;
+	min-width: 95%;
+	margin: .5em auto;
+	min-height: 150px;
+	font-family: 'Caveat' ;
+	font-size: 2rem;
+	background: rgba(245, 245, 228,.5);
+	border: none;
+}
+
+input[type="button"]{
+	width: 80%;
+	padding: .5em;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 1.5rem;
+	text-align: center;
+	transition: 0.1s ease-in; 
+	margin: 0 auto;
+	display: block;
+	font-family: 'Inconsolata';
+}
+
+input::placeholder, textarea::placeholder{
+	color: rgba(0,0,0,.3);
+}
+
+
+.box {
+    margin: 1rem 0;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto;
+}
